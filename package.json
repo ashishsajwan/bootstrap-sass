@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-sass",
+  "version": "1.0.0",
+  "description": "capillary bootsrap style sheets",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-css-preprocessor": "^0.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashishsajwan/bootstrap-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishsajwan/bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/ashishsajwan/bootstrap-sass"
+}
