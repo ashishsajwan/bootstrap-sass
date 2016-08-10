@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "capillary bootsrap style sheets",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-css-preprocessor": "^0.0.2"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
