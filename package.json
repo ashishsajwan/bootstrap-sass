@@ -9,7 +9,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/ashishsajwan/bootstrap-sass/issues"
   },
-  "homepage": "https://github.com/ashishsajwan/bootstrap-sass"
+  "homepage": "https://github.com/ashishsajwan/bootstrap-sass",
+  "dependencies": {}
 }

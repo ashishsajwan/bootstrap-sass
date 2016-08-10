@@ -4,8 +4,12 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
+var uglifycss = require('gulp-uglifycss');
 gulp.task('sass', function() {
-  gulp.src('sass/cap_style.scss').pipe(sass()).pipe(gulp.dest('dist/css'));
+  gulp.src('sass/cap_styles.scss').pipe(sass()).pipe(uglifycss({
+    "maxLineLen": 80,
+    "uglyComments": true
+  })).pipe(rename('cap_styles.min.css')).pipe(gulp.dest('dist/css'));
   gulp.src('bower_components/bootstrap-sass/assets/fonts/bootstrap/*').pipe(gulp.dest('dist/fonts/bootstrap'));
   return true;
 });
