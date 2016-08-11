@@ -21,6 +21,7 @@ gulp.task('js', function() {
   gulp.src('bower_components/bootstrap', {
     read: false
   }).pipe(clean());
+  
   // move jquery to dist/jquery folder
   gulp.src('bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('dist/js/jquery'));
   // merge bootstrap | bootbox.js => cap-bootstrap.js
