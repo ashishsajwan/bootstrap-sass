@@ -24,7 +24,7 @@ gulp.task('js', function() {
   // move jquery to dist/jquery folder
   gulp.src('bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('dist/js/jquery'));
   // merge bootstrap | bootbox.js => cap-bootstrap.js
-  gulp.src(['bower_components/bootstrap-sass/assets/javascripts/bootstrap.js', 'bower_components/bootbox.js/bootbox.js','bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js']).pipe(concat('cap-bootstrap.js')).pipe(rename('cap-bootstrap.min.js')).pipe(uglify()).pipe(gulp.dest('dist/js'));
+  gulp.src(['bower_components/bootstrap-sass/assets/javascripts/bootstrap.js', 'bower_components/bootbox.js/bootbox.js','bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js','bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js']).pipe(concat('cap-bootstrap.js')).pipe(rename('cap-bootstrap.min.js')).pipe(uglify()).pipe(gulp.dest('dist/js'));
   return true;
 });
 gulp.task('build', ['sass', 'js']);
