@@ -842,4 +842,6 @@ tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{
 .sideways>li.active>a,.sideways>li.active>a:hover,.sideways>li.active>a:focus{border-bottom-color:transparent;border-right-color:#ddd;border-left-color:#ddd}
 .sideways.tabs-left{left:-50px}.sideways.tabs-right{right:-50px}.sideways.tabs-right>li{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
 .sideways.tabs-left>li{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg)}
+.treeview .list-group-item{cursor:pointer}.treeview span.indent{margin-left:10px;margin-right:10px}
+.treeview span.icon{width:12px;margin-right:5px}.treeview .node-disabled{color:silver;cursor:not-allowed}
 .btn-borderless{background:initial;color:initial;border:initial}

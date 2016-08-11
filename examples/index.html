@@ -87,6 +87,91 @@
           </button>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            Tags as Badges
+          </h2>
+          <div class="treeview" id="treeview6">
+            <ul class="list-group">
+              <li class="list-group-item node-treeview6" data-nodeid="0" style="color:undefined;background-color:undefined;">
+                <span class="icon expand-icon glyphicon glyphicon-unchecked">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Parent 1
+                <span class="badge">
+                  4
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="1" style="color:undefined;background-color:undefined;">
+                <span class="indent">
+                </span>
+                <span class="icon expand-icon glyphicon glyphicon-stop">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Child 1
+                <span class="badge">
+                  2
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="4" style="color:undefined;background-color:undefined;">
+                <span class="indent">
+                </span>
+                <span class="icon glyphicon">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Child 2
+                <span class="badge">
+                  0
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="5" style="color:undefined;background-color:undefined;">
+                <span class="icon glyphicon">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Parent 2
+                <span class="badge">
+                  0
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="6" style="color:undefined;background-color:undefined;">
+                <span class="icon glyphicon">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Parent 3
+                <span class="badge">
+                  0
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="7" style="color:undefined;background-color:undefined;">
+                <span class="icon glyphicon">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Parent 4
+                <span class="badge">
+                  0
+                </span>
+              </li>
+              <li class="list-group-item node-treeview6" data-nodeid="8" style="color:undefined;background-color:undefined;">
+                <span class="icon glyphicon">
+                </span>
+                <span class="icon node-icon glyphicon glyphicon-user">
+                </span>
+                Parent 5
+                <span class="badge">
+                  0
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="row" style="min-height:300px;">
         <div class="col-sm-6">
           <h3>
@@ -195,9 +280,70 @@
   </body>
 </html>
 <script type="text/javascript">
-  $('#bootbox-sample').on('click',function(){
-      bootbox.alert("Hello world!", function() {
-      console.log("Hello world callback");
+  $(function() {
+    $('#bootbox-sample').on('click',function(){
+        bootbox.alert("Hello world!", function() {
+        console.log("Hello world callback");
+      });
+    });
+   var defaultData = [
+          {
+            text: 'Parent 1',
+            href: '#parent1',
+            tags: ['4'],
+            nodes: [
+              {
+                text: 'Child 1',
+                href: '#child1',
+                tags: ['2'],
+                nodes: [
+                  {
+                    text: 'Grandchild 1',
+                    href: '#grandchild1',
+                    tags: ['0']
+                  },
+                  {
+                    text: 'Grandchild 2',
+                    href: '#grandchild2',
+                    tags: ['0']
+                  }
+                ]
+              },
+              {
+                text: 'Child 2',
+                href: '#child2',
+                tags: ['0']
+              }
+            ]
+          },
+          {
+            text: 'Parent 2',
+            href: '#parent2',
+            tags: ['0']
+          },
+          {
+            text: 'Parent 3',
+            href: '#parent3',
+             tags: ['0']
+          },
+          {
+            text: 'Parent 4',
+            href: '#parent4',
+            tags: ['0']
+          },
+          {
+            text: 'Parent 5',
+            href: '#parent5'  ,
+            tags: ['0']
+          }
+        ];
+    $('#treeview6').treeview({
+      color: "#428bca",
+      expandIcon: "glyphicon glyphicon-stop",
+      collapseIcon: "glyphicon glyphicon-unchecked",
+      nodeIcon: "glyphicon glyphicon-user",
+      showTags: true,
+      data: defaultData
     });
   });
 </script>
