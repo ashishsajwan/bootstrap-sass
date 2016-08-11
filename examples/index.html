@@ -205,6 +205,81 @@
             Docs
           </a>
         </div>
+        <div class="col-xs-12">
+          <form action="post.php" class="form-horizontal" method="POST">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">
+                Multiselect
+              </label>
+              <div class="col-sm-10">
+                <select id="example-post" multiple="multiple" name="multiselect[]">
+                  <option value="1">
+                    Option 1
+                  </option>
+                  <option value="2">
+                    Option 2
+                  </option>
+                  <option value="3">
+                    Option 3
+                  </option>
+                  <option value="4">
+                    Option 4
+                  </option>
+                  <option value="5">
+                    Option 5
+                  </option>
+                  <option value="6">
+                    Option 6
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">
+                Text Input
+              </label>
+              <div class="col-sm-10">
+                <input class="form-control" name="text" placeholder="Text Input" type="text"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input name="checkbox" type="checkbox">
+                      Checkbox
+                    </input>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input name="radio" type="radio">
+                      Radio 1
+                    </input>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="radio" type="radio">
+                      Radio 2
+                    </input>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="row" style="min-height:300px;">
         <div class="col-sm-6">
@@ -383,5 +458,9 @@
       data: defaultData
     });
     $('#example-getting-started').multiselect();
+    $('#example-post').multiselect({
+      includeSelectAllOption: true,
+      enableFiltering: true
+    });
   });
 </script>
