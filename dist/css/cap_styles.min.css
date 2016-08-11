@@ -842,3 +842,4 @@ tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{
 .sideways>li.active>a,.sideways>li.active>a:hover,.sideways>li.active>a:focus{border-bottom-color:transparent;border-right-color:#ddd;border-left-color:#ddd}
 .sideways.tabs-left{left:-50px}.sideways.tabs-right{right:-50px}.sideways.tabs-right>li{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
 .sideways.tabs-left>li{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg)}
+.btn-borderless{background:initial;color:initial;border:initial}

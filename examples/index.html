@@ -24,7 +24,7 @@
             ...
           </p>
           <p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">
+            <a class="btn btn-primary btn-lg btn-borderless" href="#" id="bootbox-sample" role="button">
               Learn more
             </a>
           </p>
@@ -72,6 +72,19 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-default btn-lg btn-borderless" type="button">
+            Left
+          </button>
+          <button class="btn btn-success btn-lg btn-borderless" type="button">
+            Middle
+          </button>
+          <button class="btn btn-danger btn-lg btn-borderless" type="button">
+            Right
+          </button>
         </div>
       </div>
       <div class="row" style="min-height:300px;">
@@ -182,7 +195,9 @@
   </body>
 </html>
 <script type="text/javascript">
-  bootbox.alert("Hello world!", function() {
-  console.log("Hello world callback");
-});
+  $('#bootbox-sample').on('click',function(){
+      bootbox.alert("Hello world!", function() {
+      console.log("Hello world callback");
+    });
+  });
 </script>

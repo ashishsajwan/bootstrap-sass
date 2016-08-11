@@ -5,11 +5,19 @@
   "license": "ISC",
   "homepage": "https://github.com/ashishsajwan/bootstrap-sass",
   "private": true,
-  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "bootbox.js": "bootbox#^4.4.0",
     "bootstrap-vertical-tabs": "^1.2.1",
     "bootstrap-sass": "^3.3.7"
   },
-  "ignoredDependencies": ["bootstrap"]
+  "ignoredDependencies": [
+    "bootstrap"
+  ]
 }
