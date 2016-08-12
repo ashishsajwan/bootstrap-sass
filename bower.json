@@ -17,7 +17,8 @@
     "bootstrap-vertical-tabs": "^1.2.1",
     "bootstrap-sass": "^3.3.7",
     "bootstrap-treeview": "^1.2.0",
-    "bootstrap-multiselect": "^0.9.13"
+    "bootstrap-multiselect": "^0.9.13",
+    "bootcards": "git@github.com:bootcards/bootcards.git#master"
   },
   "ignoredDependencies": [
     "bootstrap"
